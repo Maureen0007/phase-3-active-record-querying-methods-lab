@@ -7,6 +7,7 @@ describe Show do
     Show.create(name: "The Cleveland Show", day: "Monday", network: "Fox", rating: 2)
     Show.create(name: "Fear the Walking Dead", day: "Sunday", network: "AMC", rating: 3)
   end
+end
 
   # Yes, .first through .fourth are all Active Record methods!
   # .fifth and .forty_two also work (but not others)
@@ -75,4 +76,3 @@ describe Show do
       expect(Show.shows_by_alphabetical_order).to eq([fear_the_walking_dead, law_and_order, rick_and_morty, the_cleveland_show])
     end
   end
-end
